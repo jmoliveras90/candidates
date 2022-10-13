@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.Application", "C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.Domain", "Candidates.Domain\Candidates.Domain.csproj", "{3560618F-004F-4F5F-AB45-2DE7CC0C0B9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.Infrastructure", "Candidates.Infrastructure\Candidates.Infrastructure.csproj", "{3C8F2BDE-B62D-4E00-8883-2BD6FCE81B3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.Infrastructure.Data", "Candidates.Infrastructure\Candidates.Infrastructure.Data.csproj", "{3C8F2BDE-B62D-4E00-8883-2BD6FCE81B3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
