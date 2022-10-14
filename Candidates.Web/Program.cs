@@ -1,7 +1,22 @@
+using Candidates.Application.Services.Interfaces;
+using Candidates.Domain.Interfaces.Candidates;
+using Candidates.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+using Candidates.Infrastructure.Data.Repositories.Candidates;
+using Candidates.Application.Services;
+using Candidates.Domain.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<CandidatesContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<ICandidatesService, CandidatesService>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 
 var app = builder.Build();
 

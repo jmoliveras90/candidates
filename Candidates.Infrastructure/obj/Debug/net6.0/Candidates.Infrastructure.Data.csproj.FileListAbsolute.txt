@@ -1,0 +1,17 @@
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\bin\Debug\net6.0\Candidates.Infrastructure.Data.deps.json
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\bin\Debug\net6.0\Candidates.Infrastructure.Data.dll
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\bin\Debug\net6.0\ref\Candidates.Infrastructure.Data.dll
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\bin\Debug\net6.0\Candidates.Infrastructure.Data.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\bin\Debug\net6.0\Candidates.Domain.dll
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\bin\Debug\net6.0\Candidates.Domain.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.csproj.AssemblyReference.cache
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.AssemblyInfoInputs.cache
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.AssemblyInfo.cs
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.csproj.CopyComplete
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.dll
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\ref\Candidates.Infrastructure.Data.dll
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\bin\Debug\net6.0\Candidates.Infrastructure.Data.runtimeconfig.json
+C:\Users\jmoliveras\Candidates\Candidates.Infrastructure\obj\Debug\net6.0\Candidates.Infrastructure.Data.genruntimeconfig.cache

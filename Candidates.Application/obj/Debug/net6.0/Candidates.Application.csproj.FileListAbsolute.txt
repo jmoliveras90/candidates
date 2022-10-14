@@ -1,0 +1,15 @@
+C:\Users\jmoliveras\Candidates\Candidates.Application\bin\Debug\net6.0\Candidates.Application.deps.json
+C:\Users\jmoliveras\Candidates\Candidates.Application\bin\Debug\net6.0\Candidates.Application.dll
+C:\Users\jmoliveras\Candidates\Candidates.Application\bin\Debug\net6.0\ref\Candidates.Application.dll
+C:\Users\jmoliveras\Candidates\Candidates.Application\bin\Debug\net6.0\Candidates.Application.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.csproj.AssemblyReference.cache
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.AssemblyInfoInputs.cache
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.AssemblyInfo.cs
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.csproj.CoreCompileInputs.cache
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.dll
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\ref\Candidates.Application.dll
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Application\bin\Debug\net6.0\Candidates.Domain.dll
+C:\Users\jmoliveras\Candidates\Candidates.Application\bin\Debug\net6.0\Candidates.Domain.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Application\obj\Debug\net6.0\Candidates.Application.csproj.CopyComplete

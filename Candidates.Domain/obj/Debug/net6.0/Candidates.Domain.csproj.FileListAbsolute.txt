@@ -1,0 +1,12 @@
+C:\Users\jmoliveras\Candidates\Candidates.Domain\bin\Debug\net6.0\Candidates.Domain.deps.json
+C:\Users\jmoliveras\Candidates\Candidates.Domain\bin\Debug\net6.0\Candidates.Domain.dll
+C:\Users\jmoliveras\Candidates\Candidates.Domain\bin\Debug\net6.0\ref\Candidates.Domain.dll
+C:\Users\jmoliveras\Candidates\Candidates.Domain\bin\Debug\net6.0\Candidates.Domain.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\Candidates.Domain.csproj.AssemblyReference.cache
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\Candidates.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\Candidates.Domain.AssemblyInfoInputs.cache
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\Candidates.Domain.AssemblyInfo.cs
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\Candidates.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\Candidates.Domain.dll
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\ref\Candidates.Domain.dll
+C:\Users\jmoliveras\Candidates\Candidates.Domain\obj\Debug\net6.0\Candidates.Domain.pdb

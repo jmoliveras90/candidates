@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Candidates.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Candidates.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Candidates.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Candidates.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Candidates.Domain/Candidates.Domain.csproj",
+      "msbuildProject": "../Candidates.Domain/Candidates.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Candidates.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jmoliveras\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jmoliveras\\Candidates\\Candidates.Domain\\Candidates.Domain.csproj": {
+              "projectPath": "C:\\Users\\jmoliveras\\Candidates\\Candidates.Domain\\Candidates.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

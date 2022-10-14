@@ -5,16 +5,17 @@ using Microsoft.EntityFrameworkCore;
 namespace Candidates.Infrastructure.Data
 {
     public class CandidatesContext : DbContext
-    {
+    {       
         public CandidatesContext(DbContextOptions<CandidatesContext> options) : base(options)
         {
-        }
+        }      
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CandidateExperience>()
              .HasOne(p => p.Candidate)
-             .WithMany(b => b.CandidateExperiences);
+             .WithMany(b => b.CandidateExperiences)
+             .HasForeignKey(c => c.IdCandidate);
 
             modelBuilder.ApplyConfiguration(new CandidateConfiguration());
             modelBuilder.ApplyConfiguration(new CandidateExperienceConfiguration());
