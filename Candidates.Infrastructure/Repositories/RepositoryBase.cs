@@ -7,7 +7,7 @@ namespace Candidates.Infrastructure.Data.Repositories
 {
     public class RepositoryBase<T> : IAsyncRepository<T> where T : BaseEntity
     {
-        private readonly DbSet<T> _dbSet;
+        protected readonly DbSet<T> _dbSet;
 
         public RepositoryBase(CandidatesContext dbContext)
         {

@@ -5,7 +5,32 @@
       "ProjectGuid": "29e6be2d-637d-4576-9a1c-44fc1b062160",
       "DisplayName": "Candidates.Web",
       "ColorIndex": 0
+    },
+    "b9aff454-ab18-4e4c-96ca-15614e3dc459": {
+      "ProjectGuid": "b9aff454-ab18-4e4c-96ca-15614e3dc459",
+      "DisplayName": "Candidates.Application",
+      "ColorIndex": 1
+    },
+    "3560618f-004f-4f5f-ab45-2de7cc0c0b9a": {
+      "ProjectGuid": "3560618f-004f-4f5f-ab45-2de7cc0c0b9a",
+      "DisplayName": "Candidates.Domain",
+      "ColorIndex": 2
+    },
+    "3c8f2bde-b62d-4e00-8883-2bd6fce81b3b": {
+      "ProjectGuid": "3c8f2bde-b62d-4e00-8883-2bd6fce81b3b",
+      "DisplayName": "Candidates.Infrastructure.Data",
+      "ColorIndex": 3
+    },
+    "c423e220-5f44-45e3-a843-d4db87baa435": {
+      "ProjectGuid": "c423e220-5f44-45e3-a843-d4db87baa435",
+      "DisplayName": "Candidates.Web",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 5
 }

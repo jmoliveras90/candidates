@@ -274,3 +274,6 @@ C:\Users\jmoliveras\Candidates\Candidates.Web\bin\Debug\net6.0\runtimes\win\lib\
 C:\Users\jmoliveras\Candidates\Candidates.Web\obj\Debug\net6.0\Candidates.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jmoliveras\Candidates\Candidates.Web\bin\Debug\net6.0\Candidates.Application.dll
 C:\Users\jmoliveras\Candidates\Candidates.Web\bin\Debug\net6.0\Candidates.Application.pdb
+C:\Users\jmoliveras\Candidates\Candidates.Web\bin\Debug\net6.0\MediatR.dll
+C:\Users\jmoliveras\Candidates\Candidates.Web\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\jmoliveras\Candidates\Candidates.Web\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

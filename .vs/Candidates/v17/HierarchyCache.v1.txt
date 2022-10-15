@@ -1,0 +1,414 @@
+﻿++Solución "Candidates" ‎(4 de 4 proyectos)
+i:{00000000-0000-0000-0000-000000000000}:Candidates.sln
+++2. Application
+i:{00000000-0000-0000-0000-000000000000}:2. Application
+++Candidates.Application
+i:{79a557aa-ec31-47fe-b06f-5ac1a70316e0}:Candidates.Application
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.application\candidates.application.csproj
+++Dependencias
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:>271
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:>324
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:>381
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:>194
+++Analizadores
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:analizadores
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:analizadores
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:analizadores
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:analizadores
+++Marcos de trabajo
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:marcos de trabajo
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:marcos de trabajo
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:marcos de trabajo
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:marcos de trabajo
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\microsoft.netcore.app
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\microsoft.netcore.app
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\microsoft.netcore.app
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\microsoft.netcore.app
+++3. Domain
+i:{00000000-0000-0000-0000-000000000000}:3. Domain
+++Candidates.Domain
+i:{231b6d23-1e3b-4815-bd98-72d2727d7275}:Candidates.Domain
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.domain\candidates.domain.csproj
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.domain\bin\debug\net6.0\candidates.domain.dll
+++Entities
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\entities\
+++Candidate.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\entities\candidate.cs
+++CandidateBase.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\entities\candidatebase.cs
+++CandidateExperience.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\entities\candidateexperience.cs
+++4. Infrastructure
+i:{00000000-0000-0000-0000-000000000000}:4. Infrastructure
+++Candidates.Infrastructure.Data
+i:{c3aecc6d-89aa-4557-9e8f-987d98a6aebe}:Candidates.Infrastructure.Data
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.infrastructure\candidates.infrastructure.data.csproj
+++Microsoft.AspNetCore.App.Analyzers
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.10\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Paquetes
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:paquetes
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:paquetes
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:paquetes
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:paquetes
+++Proyectos
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:proyectos
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:proyectos
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:proyectos
+++CandidateExperience
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\candidateexperience\
+++Configuration
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\configuration\
+++CandidateConfiguration.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\configuration\candidateconfiguration.cs
+++CandidateExperienceConfiguration.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\configuration\candidateexperienceconfiguration.cs
+++Migrations
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\migrations\
+++CandidatesContext.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\candidatescontext.cs
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.10)
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:>467
+++Microsoft.EntityFrameworkCore.Design (6.0.10)
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:>780
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.10)
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:>464
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:>808
+++Microsoft.EntityFrameworkCore.Tools (6.0.10)
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:>779
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:>809
+++20221013174421_InitialCreate.cs
+++CandidatesContextModelSnapshot.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\migrations\candidatescontextmodelsnapshot.cs
+++20221013174421_InitialCreate.Designer.cs
+++1. Presentation
+i:{00000000-0000-0000-0000-000000000000}:1. Presentation
+++Candidates.Web
+i:{e7ff8561-03f8-48ff-954a-e0a64242097f}:Candidates.Web
+++Connected Services 
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:>195
+++Properties
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\properties\
+++wwwroot
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\
+++css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\css\
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\js\
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\
+++favicon.ico
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\favicon.ico
+++Controllers
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\controllers\
+++HomeController.cs
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\controllers\homecontroller.cs
+++Models
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\models\
+++ErrorViewModel.cs
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\models\errorviewmodel.cs
+++Views
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\
+++appsettings.json
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\appsettings.json
+++Program.cs
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\program.cs
+++No se detectaron dependencias de servicio
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:>196
+++Microsoft.AspNetCore.Analyzers
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\microsoft.aspnetcore.app
+++launchSettings.json
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\properties\launchsettings.json
+++site.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\css\site.css
+++site.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\js\site.js
+++bootstrap
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\
+++jquery
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery\
+++jquery-validation
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation-unobtrusive\
+++Home
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\home\
+++Shared
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\shared\
+++_ViewImports.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\_viewstart.cshtml
+++appsettings.Development.json
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\appsettings.development.json
+++dist
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery\dist\
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery\license.txt
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++Index.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\home\index.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidates\index.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidateexperiences\index.cshtml
+++Privacy.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\home\privacy.cshtml
+++_Layout.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\shared\error.cshtml
+++jquery.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++_Layout.cshtml.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\shared\_layout.cshtml.css
+++bootstrap.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++20221014062348_InitialCreate.cs
+++20221014062348_InitialCreate.Designer.cs
+++20221014062818_InitialCreate.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\migrations\20221014062818_initialcreate.cs
+++20221014062818_InitialCreate.Designer.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\migrations\20221014062818_initialcreate.designer.cs
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.10)
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:>810
+++Swashbuckle.AspNetCore (6.3.0)
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:>811
+++MessagePackAnalyzer
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++CandidatesContextFactory.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\candidatescontextfactory.cs
+++CandidatesController.cs
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\controllers\candidatescontroller.cs
+++Candidates
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidates\
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\repositories\candidates\
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\interfaces\candidates\
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\
+++Create.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidates\create.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidateexperiences\create.cshtml
+++Delete.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidates\delete.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidateexperiences\delete.cshtml
+++Details.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidates\details.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidateexperiences\details.cshtml
+++Edit.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidates\edit.cshtml
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidateexperiences\edit.cshtml
+++CandidateExperiencesController.cs
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\controllers\candidateexperiencescontroller.cs
+++CandidateExperiences
+i:{c423e220-5f44-45e3-a843-d4db87baa435}:c:\users\jmoliveras\candidates\candidates.web\views\candidateexperiences\
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\repositories\candidateexperiences\
+++NewFolder
+++Repositories
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\repositories\
+++RepositoryBase.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\repositories\repositorybase.cs
+++NewFolder1
+++Interfaces
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\interfaces\
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\services\interfaces\
+++Interface1.cs
+++IAsyncRepository.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\interfaces\iasyncrepository.cs
+++IAsyncRepository - Copia.cs
+++IAsyncRepository - Copia (2).cs
+++IUnitOfWork.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\interfaces\iunitofwork.cs
+++IRepository.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\interfaces\irepository.cs
+++BaseEntity.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\entities\baseentity.cs
+++UnifOfWork.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\unifofwork.cs
+++Candidates - Copia
+++CandidateExperienceRepository.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\repositories\candidateexperiences\candidateexperiencerepository.cs
+++CandidateRepository.cs
+i:{3c8f2bde-b62d-4e00-8883-2bd6fce81b3b}:c:\users\jmoliveras\candidates\candidates.infrastructure\repositories\candidates\candidaterepository.cs
+++Candidate
+++ICandidateRepository.cs
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:c:\users\jmoliveras\candidates\candidates.domain\interfaces\candidates\icandidaterepository.cs
+++Services
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\services\
+++CandidatesService.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\services\candidatesservice.cs
+++ICandidatesService.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\services\interfaces\icandidatesservice.cs
+++ICandidatesRepository.cs
+++BaseService.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\services\baseservice.cs
+++Commands
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\commands\
+++Queries
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\queries\
+++CreateCandidateCommands.cs
+++CreateCandidateCommand.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\commands\createcandidatecommand.cs
+++GetAllCandidatesQuery.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\queries\getallcandidatesquery.cs
+++CreateCandidateCommand - Copia.cs
+++CreateCandidateCommand - Copia (2).cs
+++UpdateCandidateCommand .cs
+++UpdateCandidateCommand.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\commands\updatecandidatecommand.cs
+++DeleteCandidateCommand.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\commands\deletecandidatecommand.cs
+++GetAllCandidatesQuery - Copia.cs
+++GetCandidateQuery.cs
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:c:\users\jmoliveras\candidates\candidates.application\candidates\queries\getcandidatequery.cs
+++MediatR (11.0.0)
+i:{3560618f-004f-4f5f-ab45-2de7cc0c0b9a}:>1393
+i:{b9aff454-ab18-4e4c-96ca-15614e3dc459}:>1411

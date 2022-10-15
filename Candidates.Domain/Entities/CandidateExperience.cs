@@ -1,11 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Candidates.Domain.Entities
+﻿namespace Candidates.Domain.Entities
 {
     public class CandidateExperience : CandidateBase
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdCandidateExperience { get; set; }
         public int IdCandidate { get; set; }
         public string Company { get; set; }

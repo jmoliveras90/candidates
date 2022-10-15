@@ -1,30 +1,32 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Candidates.Domain.Entities;
-using Candidates.Application.Services.Interfaces;
+using MediatR;
+using Candidates.Application.Queries.Candidates;
+using Candidates.Application.Commands.Candidates;
+using Candidates.Application.Queries;
 
 namespace Candidates.Web.Controllers
 {
     public class CandidatesController : Controller
     {
-        private readonly ICandidatesService candidatesService;
+        private readonly IMediator _mediator;
 
-        public CandidatesController(ICandidatesService candidatesService)
+        public CandidatesController(IMediator mediator)
         {
-            this.candidatesService = candidatesService;
+            _mediator = mediator;
         }     
 
         // GET: Candidates
         public async Task<IActionResult> Index()
         {
-            return View(await candidatesService.GetAllCandidates());
+            return View(await _mediator.Send(new GetAllCandidatesQuery()));
         }
 
         // GET: Candidates/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var candidate = await candidatesService.GetCandidate(id);
-                
+            var candidate = await _mediator.Send(new GetCandidateQuery(id));
+
             if (candidate == null)
             {
                 return NotFound();
@@ -44,20 +46,21 @@ namespace Candidates.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCandidate,Name,Surname,Birthdate,Email,InsertDate,ModifyDate")] Candidate candidate)
+        public async Task<IActionResult> Create(CreateCandidateCommand command)
         {
             if (ModelState.IsValid)
             {
-                await candidatesService.CreateCandidate(candidate);
+                await _mediator.Send(command);
                 return RedirectToAction(nameof(Index));
             }
-            return View(candidate);
+
+            return View(command);
         }
 
         // GET: Candidates/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
-            var candidate = await candidatesService.GetCandidate(id);
+            var candidate = await _mediator.Send(new GetCandidateQuery(id));
 
             if (candidate == null)
             {
@@ -72,18 +75,13 @@ namespace Candidates.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCandidate,Name,Surname,Birthdate,Email,InsertDate,ModifyDate")] Candidate candidate)
-        {
-            if (id != candidate.IdCandidate)
-            {
-                return NotFound();
-            }
-
+        public async Task<IActionResult> Edit(UpdateCandidateCommand command)
+        {            
             if (ModelState.IsValid)
             {
                 try
                 {
-                    await candidatesService.UpdateCandidate(candidate);
+                    await _mediator.Send(command);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -98,13 +96,13 @@ namespace Candidates.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(candidate);
+            return View(command);
         }
 
         // GET: Candidates/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
-            var candidate = await candidatesService.GetCandidate(id);
+            var candidate = await _mediator.Send(new GetCandidateQuery(id));
 
             if (candidate == null)
             {
@@ -119,11 +117,11 @@ namespace Candidates.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var candidate = await candidatesService.GetCandidate(id);
+            var candidate = await _mediator.Send(new GetCandidateQuery(id));
 
             if (candidate != null)
             {
-                await candidatesService.DeleteCandidate(candidate);
+                await _mediator.Send(new DeleteCandidateCommand(id));
             }
             
             return RedirectToAction(nameof(Index));

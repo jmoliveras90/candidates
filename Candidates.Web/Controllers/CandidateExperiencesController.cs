@@ -1,54 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Candidates.Domain.Entities;
-using Candidates.Infrastructure.Data;
+using MediatR;
+using Candidates.Application.Queries.CandidateExperiences;
+using Candidates.Application.Commands.CandidateExperiences;
+using Candidates.Application.Queries.Candidates;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Candidates.Application.Queries;
 
 namespace Candidates.Web.Controllers
 {
     public class CandidateExperiencesController : Controller
     {
-        private readonly CandidatesContext _context;
+        private readonly IMediator _mediator;
 
-        public CandidateExperiencesController(CandidatesContext context)
+        public CandidateExperiencesController(IMediator mediator)
         {
-            _context = context;
+            _mediator = mediator;
         }
 
         // GET: CandidateExperiences
         public async Task<IActionResult> Index()
         {
-            var candidatesContext = _context.CandidateExperiences.Include(c => c.Candidate);
-            return View(await candidatesContext.ToListAsync());
+            return View(await _mediator.Send(new GetAllCandidateExperiencesQuery()));
         }
 
         // GET: CandidateExperiences/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int id)
         {
-            if (id == null || _context.CandidateExperiences == null)
+            var experience = await _mediator.Send(new GetCandidateExperienceQuery(id));
+
+            if (experience == null)
             {
                 return NotFound();
             }
 
-            var candidateExperience = await _context.CandidateExperiences
-                .Include(c => c.Candidate)
-                .FirstOrDefaultAsync(m => m.IdCandidateExperience == id);
-            if (candidateExperience == null)
-            {
-                return NotFound();
-            }
-
-            return View(candidateExperience);
+            return View(experience);
         }
 
         // GET: CandidateExperiences/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["IdCandidate"] = new SelectList(_context.Candidates, "IdCandidate", "Email");
+            ViewData["IdCandidate"] = new SelectList(await _mediator.Send(new GetAllCandidatesQuery()), 
+                "IdCandidate", "Email");
+
             return View();
         }
 
@@ -57,33 +51,28 @@ namespace Candidates.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdCandidateExperience,IdCandidate,Company,Job,Description,Salary,BeginDate,EndDate,InsertDate,ModifyDate")] CandidateExperience candidateExperience)
+        public async Task<IActionResult> Create(CreateCandidateExperienceCommand command)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(candidateExperience);
-                await _context.SaveChangesAsync();
+                await _mediator.Send(command);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCandidate"] = new SelectList(_context.Candidates, "IdCandidate", "Email", candidateExperience.IdCandidate);
-            return View(candidateExperience);
+
+            return View(command);
         }
 
         // GET: CandidateExperiences/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null || _context.CandidateExperiences == null)
+            var experience = await _mediator.Send(new GetCandidateExperienceQuery(id));
+
+            if (experience == null)
             {
                 return NotFound();
             }
 
-            var candidateExperience = await _context.CandidateExperiences.FindAsync(id);
-            if (candidateExperience == null)
-            {
-                return NotFound();
-            }
-            ViewData["IdCandidate"] = new SelectList(_context.Candidates, "IdCandidate", "Email", candidateExperience.IdCandidate);
-            return View(candidateExperience);
+            return View(experience);
         }
 
         // POST: CandidateExperiences/Edit/5
@@ -91,54 +80,41 @@ namespace Candidates.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdCandidateExperience,IdCandidate,Company,Job,Description,Salary,BeginDate,EndDate,InsertDate,ModifyDate")] CandidateExperience candidateExperience)
+        public async Task<IActionResult> Edit(UpdateCandidateExperienceCommand command)
         {
-            if (id != candidateExperience.IdCandidateExperience)
-            {
-                return NotFound();
-            }
-
             if (ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(candidateExperience);
-                    await _context.SaveChangesAsync();
+                    await _mediator.Send(command);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CandidateExperienceExists(candidateExperience.IdCandidateExperience))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    //if (!CandidateExists(candidate.IdCandidate))
+                    //{
+                    //    return NotFound();
+                    //}
+                    //else
+                    //{
+                    //    throw;
+                    //}
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCandidate"] = new SelectList(_context.Candidates, "IdCandidate", "Email", candidateExperience.IdCandidate);
-            return View(candidateExperience);
+            return View(command);
         }
 
         // GET: CandidateExperiences/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null || _context.CandidateExperiences == null)
+            var experience = await _mediator.Send(new GetCandidateExperienceQuery(id));
+
+            if (experience == null)
             {
                 return NotFound();
             }
 
-            var candidateExperience = await _context.CandidateExperiences
-                .Include(c => c.Candidate)
-                .FirstOrDefaultAsync(m => m.IdCandidateExperience == id);
-            if (candidateExperience == null)
-            {
-                return NotFound();
-            }
-
-            return View(candidateExperience);
+            return View(experience);
         }
 
         // POST: CandidateExperiences/Delete/5
@@ -146,23 +122,14 @@ namespace Candidates.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.CandidateExperiences == null)
-            {
-                return Problem("Entity set 'CandidatesContext.CandidateExperiences'  is null.");
-            }
-            var candidateExperience = await _context.CandidateExperiences.FindAsync(id);
-            if (candidateExperience != null)
-            {
-                _context.CandidateExperiences.Remove(candidateExperience);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+            var candidate = await _mediator.Send(new GetCandidateExperienceQuery(id));
 
-        private bool CandidateExperienceExists(int id)
-        {
-          return _context.CandidateExperiences.Any(e => e.IdCandidateExperience == id);
+            if (candidate != null)
+            {
+                await _mediator.Send(new DeleteCandidateExperienceCommand(id));
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

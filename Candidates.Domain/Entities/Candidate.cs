@@ -1,10 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Candidates.Domain.Entities
+﻿namespace Candidates.Domain.Entities
 {
     public class Candidate : CandidateBase
     {
-      //  [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdCandidate { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }

@@ -1,5 +1,6 @@
 ﻿using Candidates.Domain.Entities;
 using Candidates.Domain.Interfaces.Candidates;
+using Microsoft.EntityFrameworkCore;
 
 namespace Candidates.Infrastructure.Data.Repositories.Candidates
 {
@@ -7,6 +8,11 @@ namespace Candidates.Infrastructure.Data.Repositories.Candidates
     {
         public CandidateRepository(CandidatesContext context) : base(context)
         {
+        }
+
+        public new async Task<IEnumerable<Candidate>> GetAllAsync()
+        {
+            return await _dbSet.Include(c => c.CandidateExperiences).ToListAsync();
         }
     }   
 }
