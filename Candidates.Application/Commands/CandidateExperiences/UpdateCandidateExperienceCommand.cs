@@ -23,7 +23,7 @@ namespace Candidates.Application.Commands.CandidateExperiences
                 experience.Salary = command.Salary;
                 experience.Job = command.Job;
                 experience.Description = command.Description;
-                experience.IdCandidateExperience = command.Id;
+                experience.IdCandidate = command.IdCandidate;
                 experience.Company = command.Company;
                 experience.BeginDate = command.BeginDate;
                 experience.EndDate = command.EndDate;

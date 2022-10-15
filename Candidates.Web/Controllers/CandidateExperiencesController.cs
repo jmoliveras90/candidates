@@ -65,6 +65,9 @@ namespace Candidates.Web.Controllers
         // GET: CandidateExperiences/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
+            ViewData["IdCandidate"] = new SelectList(await _mediator.Send(new GetAllCandidatesQuery()),
+               "IdCandidate", "Email");
+
             var experience = await _mediator.Send(new GetCandidateExperienceQuery(id));
 
             if (experience == null)

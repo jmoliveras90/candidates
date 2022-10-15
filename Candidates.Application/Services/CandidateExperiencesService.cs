@@ -20,7 +20,7 @@ namespace Candidates.Application.Services
 
         public async Task<CandidateExperience> GetCandidateExperience(int id)
         {
-            return await repository.GetAsync(c => c.IdCandidate == id);
+            return await repository.GetAsync(c => c.IdCandidateExperience == id);
         }
 
         public async Task CreateCandidateExperience(CandidateExperience candidate)

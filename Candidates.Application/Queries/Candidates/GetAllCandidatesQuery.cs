@@ -17,8 +17,7 @@ namespace Candidates.Application.Queries
 
             public async Task<IEnumerable<Candidate>> Handle(GetAllCandidatesQuery query, CancellationToken cancellationToken)
             {
-                var e= await _candidatesService.GetAllCandidates();
-                return e;
+                return await _candidatesService.GetAllCandidates();
             }
         }
     }
