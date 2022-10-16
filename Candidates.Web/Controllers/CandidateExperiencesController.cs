@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using MediatR;
 using Candidates.Application.Queries.CandidateExperiences;
 using Candidates.Application.Commands.CandidateExperiences;
-using Candidates.Application.Queries.Candidates;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Candidates.Application.Queries;
 

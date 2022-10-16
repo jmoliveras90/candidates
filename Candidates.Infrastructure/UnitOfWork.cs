@@ -1,7 +1,6 @@
 ﻿using Candidates.Domain.Entities;
 using Candidates.Domain.Interfaces;
 using Candidates.Infrastructure.Data.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 namespace Candidates.Infrastructure.Data
 {
@@ -12,12 +11,7 @@ namespace Candidates.Infrastructure.Data
         public UnitOfWork(CandidatesContext dbContext)
         {
             _dbContext = dbContext;
-        }
-
-        public DbSet<TEntity> CreateSet<TEntity>() where TEntity : class
-        {
-            return base.Set<TEntity>();
-        }
+        }       
 
         public IAsyncRepository<T> AsyncRepository<T>() where T : BaseEntity
         {

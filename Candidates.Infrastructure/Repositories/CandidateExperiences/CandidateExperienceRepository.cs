@@ -1,6 +1,5 @@
 ﻿using Candidates.Domain.Entities;
 using Candidates.Domain.Interfaces.CandidateExperiences;
-using System.Linq;
 
 namespace Candidates.Infrastructure.Data.Repositories.CandidateExperiences
 {

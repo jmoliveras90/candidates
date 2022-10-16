@@ -6,11 +6,11 @@ namespace Candidates.Application.Queries.CandidateExperiences
 {
     public class GetAllCandidateExperiencesQuery : IRequest<IEnumerable<CandidateExperience>>
     {
-        public class GetAllCandidatesQueryHandler : IRequestHandler<GetAllCandidateExperiencesQuery, IEnumerable<CandidateExperience>>
+        public class GetAllCandidateExperiencesQueryHandler : IRequestHandler<GetAllCandidateExperiencesQuery, IEnumerable<CandidateExperience>>
         {
             private readonly ICandidateExperiencesService _candidateExperiencesService;
 
-            public GetAllCandidatesQueryHandler(ICandidateExperiencesService candidateExperiencesService)
+            public GetAllCandidateExperiencesQueryHandler(ICandidateExperiencesService candidateExperiencesService)
             {
                 _candidateExperiencesService = candidateExperiencesService;
             }
