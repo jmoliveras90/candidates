@@ -1,6 +1,5 @@
 ﻿using Candidates.Application.Extensions;
 using Candidates.Application.Services.Interfaces;
-using Candidates.Domain.Entities;
 using MediatR;
 
 namespace Candidates.Application.Commands.Candidates

@@ -1,5 +1,4 @@
 using Candidates.Application.Commands.CandidateExperiences;
-using Candidates.Application.Queries;
 using Candidates.Application.Queries.CandidateExperiences;
 using Candidates.Domain.Entities;
 using Candidates.Web.Controllers;

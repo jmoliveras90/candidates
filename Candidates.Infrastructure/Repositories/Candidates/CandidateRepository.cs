@@ -1,6 +1,5 @@
 ﻿using Candidates.Domain.Entities;
 using Candidates.Domain.Interfaces.Candidates;
-using Microsoft.EntityFrameworkCore;
 
 namespace Candidates.Infrastructure.Data.Repositories.Candidates
 {

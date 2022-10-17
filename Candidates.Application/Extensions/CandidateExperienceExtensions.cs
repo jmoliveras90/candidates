@@ -1,5 +1,4 @@
 ﻿using Candidates.Application.Commands.CandidateExperiences;
-using Candidates.Application.Commands.Candidates;
 using Candidates.Domain.Entities;
 
 namespace Candidates.Application.Extensions
