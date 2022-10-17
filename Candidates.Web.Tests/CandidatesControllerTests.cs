@@ -62,7 +62,7 @@ namespace Candidates.Web.Tests
             var candidate = GetIncompleteTestCandidateCommand();
             var result = await _controller.Create(candidate);
             var viewResult = Assert.IsType<ViewResult>(result);
-            var testCandidate= Assert.IsType<CreateCandidateCommand>(viewResult.Model);
+            var testCandidate = Assert.IsType<CreateCandidateCommand>(viewResult.Model);
 
             Assert.Equal(candidate.Surname, testCandidate.Surname);
             Assert.Equal(candidate.Email, testCandidate.Email);
@@ -100,7 +100,7 @@ namespace Candidates.Web.Tests
             var redirectToActionResult = Assert.IsType<RedirectToActionResult>(result);
 
             Assert.Equal("Index", redirectToActionResult.ActionName);
-        }        
+        }
 
         private List<Candidate> GetTestCandidates()
         {

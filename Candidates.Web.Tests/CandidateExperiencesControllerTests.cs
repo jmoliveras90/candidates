@@ -62,7 +62,7 @@ namespace Candidates.Web.Tests
             var experience = GetIncompleteTestCandidateExperienceCommand();
             var result = await _controller.Create(experience);
             var viewResult = Assert.IsType<ViewResult>(result);
-            var testExperience= Assert.IsType<CreateCandidateExperienceCommand>(viewResult.Model);
+            var testExperience = Assert.IsType<CreateCandidateExperienceCommand>(viewResult.Model);
 
             Assert.Equal(experience.IdCandidate, testExperience.IdCandidate);
             Assert.Equal(experience.Description, testExperience.Description);
@@ -145,8 +145,8 @@ namespace Candidates.Web.Tests
         {
             return new CreateCandidateExperienceCommand
             {
-               IdCandidate= 1,
-               Description = "Testing"
+                IdCandidate = 1,
+                Description = "Testing"
             };
         }
 

@@ -4,6 +4,7 @@ using MediatR;
 using Candidates.Application.Queries.Candidates;
 using Candidates.Application.Commands.Candidates;
 using Candidates.Application.Queries;
+using Candidates.Web.ViewModels;
 
 namespace Candidates.Web.Controllers
 {
@@ -65,9 +66,16 @@ namespace Candidates.Web.Controllers
             if (candidate == null)
             {
                 return NotFound();
-            }           
-          
-            return View(candidate);
+            }
+
+            return View(new CandidateViewModel
+            {
+                Birthdate = candidate.Birthdate,
+                Email = candidate.Email,
+                IdCandidate = candidate.IdCandidate,
+                Name = candidate.Name,
+                Surname = candidate.Surname
+            });
         }
 
         // POST: Candidates/Edit/5
@@ -125,6 +133,19 @@ namespace Candidates.Web.Controllers
             }
             
             return RedirectToAction(nameof(Index));
+        }
+
+        [AcceptVerbs("GET", "POST")]
+        public async Task<IActionResult> VerifyEmail(string email, int idCandidate)
+        {
+            var candidates = await _mediator.Send(new GetAllCandidatesQuery());
+
+            if (candidates.Any(c => c.Email == email && c.IdCandidate != idCandidate))
+            {
+                return Json($"Email already registered.");
+            }
+
+            return Json(true);
         }
 
         private async Task<bool> CandidateExists(int id)

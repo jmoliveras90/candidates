@@ -22,6 +22,7 @@ if (assembly != null)
     builder.Services.AddMediatR(assembly);
 }
 
+
 builder.Services.AddScoped<ICandidatesService, CandidatesService>();
 builder.Services.AddScoped<ICandidateExperiencesService, CandidateExperiencesService>();
 
