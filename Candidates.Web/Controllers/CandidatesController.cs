@@ -85,14 +85,14 @@ namespace Candidates.Web.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    //if (!CandidateExists(candidate.IdCandidate))
-                    //{
-                    //    return NotFound();
-                    //}
-                    //else
-                    //{
-                    //    throw;
-                    //}
+                    if (!await CandidateExists(command.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -125,6 +125,13 @@ namespace Candidates.Web.Controllers
             }
             
             return RedirectToAction(nameof(Index));
-        }        
+        }
+
+        private async Task<bool> CandidateExists(int id)
+        {
+            var candidate = await _mediator.Send(new GetCandidateQuery(id));
+
+            return candidate != null;
+        }
     }
 }

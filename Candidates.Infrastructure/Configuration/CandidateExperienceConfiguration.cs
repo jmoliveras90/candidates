@@ -22,6 +22,8 @@ namespace Candidates.Infrastructure.Data.Configuration
             builder.Property(c => c.InsertDate).IsRequired();
             builder.Property(c => c.EndDate).IsRequired(false);
             builder.Property(c => c.ModifyDate).IsRequired(false);
+
+            builder.Navigation(x => x.Candidate).AutoInclude();
         }
     }
 }

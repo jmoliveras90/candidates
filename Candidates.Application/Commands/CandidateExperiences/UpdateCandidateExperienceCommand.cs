@@ -1,4 +1,5 @@
-﻿using Candidates.Application.Services.Interfaces;
+﻿using Candidates.Application.Extensions;
+using Candidates.Application.Services.Interfaces;
 using MediatR;
 
 namespace Candidates.Application.Commands.CandidateExperiences
@@ -20,14 +21,7 @@ namespace Candidates.Application.Commands.CandidateExperiences
             {
                 var experience = await _candidateExperiencesService.GetCandidateExperience(command.Id);
 
-                experience.Salary = command.Salary;
-                experience.Job = command.Job;
-                experience.Description = command.Description;
-                experience.IdCandidate = command.IdCandidate;
-                experience.Company = command.Company;
-                experience.BeginDate = command.BeginDate;
-                experience.EndDate = command.EndDate;
-                experience.ModifyDate = DateTime.Now;
+                experience.Update(command);
 
                 await _candidateExperiencesService.UpdateCandidateExperience(experience);
 

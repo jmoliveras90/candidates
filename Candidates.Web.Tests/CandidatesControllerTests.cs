@@ -1,11 +1,11 @@
 using Candidates.Application.Commands.Candidates;
 using Candidates.Application.Queries;
 using Candidates.Domain.Entities;
-using Candidates.Domain.Interfaces.Candidates;
 using Candidates.Web.Controllers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -25,11 +25,41 @@ namespace Candidates.Web.Tests
         }
 
         [Fact]
+        public async void Index_ActionExecutes_ReturnsViewForIndex()
+        {
+            var result = await _controller.Index();
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
+        public async void Index_ReturnsAViewResult_WithAListOfCandidates()
+        {
+            _mockMediator.Setup(x => x.Send(It.IsAny<GetAllCandidatesQuery>(),
+                It.IsAny<CancellationToken>())).ReturnsAsync(GetTestCandidates());
+
+            var controller = new CandidatesController(_mockMediator.Object);
+            var result = await controller.Index();
+            var viewResult = Assert.IsType<ViewResult>(result);
+            var model = Assert.IsAssignableFrom<IEnumerable<Candidate>>(
+                viewResult.ViewData.Model);
+
+            Assert.Equal(2, model.Count());
+        }
+
+        [Fact]
+        public void Create_ActionExecutes_ReturnsViewForCreate()
+        {
+            var result = _controller.Create();
+
+            Assert.IsType<ViewResult>(result);
+        }
+
+        [Fact]
         public async void Create_InvalidModelState_ReturnsView()
         {
-            _controller.ModelState.AddModelError("Name", "Name is required");
+            AddModelError();
 
-            var candidate = new CreateCandidateCommand { Surname = "Pruebas", Email = "prueba@pruebas.com" };
+            var candidate = GetIncompleteTestCandidateCommand();
             var result = await _controller.Create(candidate);
             var viewResult = Assert.IsType<ViewResult>(result);
             var testCandidate= Assert.IsType<CreateCandidateCommand>(viewResult.Model);
@@ -41,9 +71,9 @@ namespace Candidates.Web.Tests
         [Fact]
         public async void Create_InvalidModelState_MediatorSendNeverExecutes()
         {
-            _controller.ModelState.AddModelError("Name", "Name is required");
+            AddModelError();
 
-            var candidate = new CreateCandidateCommand { Surname = "Pruebas", Email = "prueba@pruebas.com" };
+            var candidate = GetIncompleteTestCandidateCommand();
 
             await _controller.Create(candidate);
 
@@ -52,56 +82,66 @@ namespace Candidates.Web.Tests
         }
 
         [Fact]
-        public async void Create_ModelStateValid_CreateEmployeeCalledOnce()
+        public async void Create_ModelStateValid_MediatorSendCalledOnce()
         {
-            //CreateCandidateCommand? cand = null;
-            //_mockMediator.Setup(r => r.Send(It.IsAny<CreateCandidateCommand>(), It.IsAny<CancellationToken>()))
-            //    .Callback<CreateCandidateCommand>(c => cand = c);
-
-            var candidate = new CreateCandidateCommand { Name = "Prueba", Surname = "Pruebas", Email = "prueba@pruebas.com", Birthdate = new System.DateTime(1994, 7, 2) };
+            var candidate = GetCompleteTestCandidateCommand();
 
             await _controller.Create(candidate);
 
             _mockMediator.Verify(x => x.Send(candidate,
                  It.IsAny<CancellationToken>()), Times.Once);
-            //Assert.Equal(cand.Name, candidate.Name);
-            //Assert.Equal(cand.Surname, candidate.Surname);
-            //Assert.Equal(cand.Email, candidate.Email);
-            //Assert.Equal(cand.Birthdate, candidate.Birthdate);
         }
 
-        //[Fact]
-        //public async void Index_ReturnsAViewResult_WithAListOfCandidates()
-        //{
-        //    var mockMediator = new Mock<IMediator>();
+        [Fact]
+        public async void Create_ActionExecuted_RedirectsToIndexAction()
+        {
+            var candidate = GetCompleteTestCandidateCommand();
+            var result = await _controller.Create(candidate);
+            var redirectToActionResult = Assert.IsType<RedirectToActionResult>(result);
 
-        //    mockMediator.Setup(x => x.Send(new GetAllCandidatesQuery(),
-        //        It.IsAny<CancellationToken>())).ReturnsAsync(GetTestCandidates());
+            Assert.Equal("Index", redirectToActionResult.ActionName);
+        }        
 
-        //    var controller = new CandidatesController(mockMediator.Object);
-        //    var result = await controller.Index();
-        //    var viewResult = Assert.IsType<ViewResult>(result);
-        //    var model = Assert.IsAssignableFrom<Candidate[]>(
-        //        viewResult.ViewData.Model);
+        private List<Candidate> GetTestCandidates()
+        {
+            return new List<Candidate>()
+            {
+                new Candidate()
+                {
+                    IdCandidate = 1,
+                    Name = "Antonio"
+                },
+                new Candidate()
+                {
+                    IdCandidate = 2,
+                    Name = "Juan"
+                }
+            };
+        }
 
-        //    Assert.Equal(2, model.Count());
-        //}
+        private CreateCandidateCommand GetCompleteTestCandidateCommand()
+        {
+            return new CreateCandidateCommand
+            {
+                Name = "Prueba",
+                Surname = "Pruebas",
+                Email = "prueba@pruebas.com",
+                Birthdate = new DateTime(1994, 7, 2)
+            };
+        }
 
-        //private List<Candidate> GetTestCandidates()
-        //{
-        //    return new List<Candidate>()
-        //    {
-        //        new Candidate()
-        //        {
-        //            IdCandidate = 1,
-        //            Name = "Antonio"
-        //        },
-        //        new Candidate()
-        //        {
-        //            IdCandidate = 2,
-        //            Name = "Juan"
-        //        }
-        //    };
-        //}
+        private CreateCandidateCommand GetIncompleteTestCandidateCommand()
+        {
+            return new CreateCandidateCommand
+            {
+                Surname = "Pruebas",
+                Email = "prueba@pruebas.com"
+            };
+        }
+
+        private void AddModelError()
+        {
+            _controller.ModelState.AddModelError("Name", "Name is required");
+        }
     }
 }

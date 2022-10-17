@@ -1,16 +1,12 @@
-﻿using Candidates.Application.Services.Interfaces;
+﻿using Candidates.Application.Extensions;
+using Candidates.Application.Services.Interfaces;
 using Candidates.Domain.Entities;
 using MediatR;
 
 namespace Candidates.Application.Commands.Candidates
 {
-    public class CreateCandidateCommand : IRequest
+    public class CreateCandidateCommand : CandidateCommand, IRequest
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public DateTime Birthdate { get; set; }
-        public string Email { get; set; }
-
         public class CreateCandidateCommandHandler : IRequestHandler<CreateCandidateCommand>
         {
             private readonly ICandidatesService _candidateService;
@@ -21,17 +17,8 @@ namespace Candidates.Application.Commands.Candidates
             }
 
             public async Task<Unit> Handle(CreateCandidateCommand command, CancellationToken cancellationToken)
-            {
-                var candidate = new Candidate()
-                {
-                    Name = command.Name,
-                    Surname = command.Surname,
-                    Birthdate = command.Birthdate,
-                    Email = command.Email,                    
-                    InsertDate = DateTime.Now
-                };
-
-                await _candidateService.CreateCandidate(candidate);
+            {               
+                await _candidateService.CreateCandidate(command.ToEntity());
 
                 return default;
             }

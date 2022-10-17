@@ -92,14 +92,14 @@ namespace Candidates.Web.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    //if (!CandidateExists(candidate.IdCandidate))
-                    //{
-                    //    return NotFound();
-                    //}
-                    //else
-                    //{
-                    //    throw;
-                    //}
+                    if (!await ExperienceExists(command.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -132,6 +132,13 @@ namespace Candidates.Web.Controllers
             }
 
             return RedirectToAction(nameof(Index));
+        }
+
+        private async Task<bool> ExperienceExists(int id)
+        {
+            var experience = await _mediator.Send(new GetCandidateExperienceQuery(id));
+
+            return experience != null;
         }
     }
 }
