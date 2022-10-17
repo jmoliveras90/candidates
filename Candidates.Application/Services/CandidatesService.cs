@@ -1,16 +1,17 @@
 ﻿using Candidates.Application.Services.Interfaces;
 using Candidates.Domain.Entities;
 using Candidates.Domain.Interfaces;
+using Candidates.Domain.Interfaces.Candidates;
 
 namespace Candidates.Application.Services
 {
     public class CandidatesService : BaseService, ICandidatesService
     {
-        private readonly IAsyncRepository<Candidate> repository;
+        private readonly ICandidateRepository repository;
 
         public CandidatesService(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
-            repository = unitOfWork.AsyncRepository<Candidate>();
+            repository = unitOfWork.Candidates;
         }
 
         public async Task<IEnumerable<Candidate>> GetAllCandidates()
